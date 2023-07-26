@@ -7,39 +7,44 @@
         <link rel="stylesheet" href="css/style.css">    
 
         <title>Calculator</title>
+        
     </head>
     <body>
-        <h1>CALCULADORA</h1>
-
         <div id="Calculator">
-            <div id="display"> </div>
+            <div class="resultado">
+                <input type="text"  class="display" placeholder="0" disabled="disabled">
+            </div>   
 
-            <div id="Numbers">
-                <div id="porcentagem" class="square">%</div>
-                <div id="C" class="square">C</div>
-                <div id="delet" class="square"><-</div>
+            <div class="row">
+              <button type="button" class="btn clear">C</button>
+              <button type="button" class="btn">/</button>
+              <button type="button" class="btn">x</button>
+            </div>
 
-                <div id="7" class="square gray-flet">7</div>
-                <div id="8" class="square gray-flet">8</div>
-                <div id="9" class="square gray-flet">9</div>
-
-                <div id="4" class="square gray-flet">4</div>
-                <div id="5" class="square gray-flet">5</div>
-                <div id="6" class="square gray-flet">6</div>
+            <div class="row">
+              <button type="button" class="btn">7</button>
+              <button type="button" class="btn">8</button>
+              <button type="button" class="btn">9</button>
+              <button type="button" class="btn">-</button>
+            </div>
             
-                <div id="1" class="square gray-flet">1</div>
-                <div id="2" class="square gray-flet">2</div>
-                <div id="3" class="square gray-flet">3</div>
+            <div class="row">
+              <button type="button" class="btn">4</button>
+              <button type="button" class="btn">5</button>
+              <button type="button" class="btn">6</button>
+              <button type="button" class="btn">+</button>
+            </div>
 
-                <div id="virgula" class="square">,</div>
-                <div id="0" class="square gray-flet">0</div> 
-                <div id="menos" class="square">-</div> 
-                
-                <div id="div" class="square">/</div>   
-                <div id="mult" class="square">X</div>
-                <div id="mais" class="square">+</div>
-                
-                <div id="result" class="square">=</div>
+            <div class="row">
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">2</button>
+              <button type="button" class="btn">3</button>
+              <button type="button" class="btn enter blue">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button type="button" class="btn zero">0</button>
+              <button type="button" class="btn">.</button>
             </div>
         </div>
 
