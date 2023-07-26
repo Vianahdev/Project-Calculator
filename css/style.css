@@ -33,6 +33,10 @@ h1{
   pointer-events: none;
   border-radius: 10px;
   margin-bottom: 1px;
+
+  font-size: 45px;
+
+  text-align: right;
 }
 
 #Numbers{
