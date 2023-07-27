@@ -1,15 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let btns = document.querySelectorAll(".square")
+function calcular(tipo, valor) {
+  if (tipo === "acao") {
+    if (valor === "C") {
+      document.querySelector("input#display").value = ""
+    }
 
-  btns.forEach((btn) => {
-    btn.addEventListener("click", (event)=>{
-      let btn = event.target
-      let click = btn.id
+    if (
+      valor === "+" ||
+      valor === "-" ||
+      valor === "/" ||
+      valor === "*" ||
+      valor === "."
+    ) {
+      document.querySelector("input#display").value += valor
+    }
 
-      let display = document.querySelector("div#display")
+    if (valor === '='){
+      let l_valorCampo = eval(document.querySelector("input#display").value);
+      
+      document.querySelector("input#display").value = l_valorCampo;
+    }
 
-      display.innerText = `${click}`
 
-    })
-  })
-})
+  } else if (tipo === "valor") {
+    document.querySelector("input#display").value += valor
+  }
+}
